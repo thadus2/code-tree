@@ -8,7 +8,7 @@ public class Main {
         int i = 1;
         int max = 0;
         // Please write your code here.
-        for (; i < n || i < m; i++ ) {
+        for (; i < n+1 || i < m+1; i++ ) {
             if (n % i == 0 && m % i == 0) {
                 max = i;
             }
