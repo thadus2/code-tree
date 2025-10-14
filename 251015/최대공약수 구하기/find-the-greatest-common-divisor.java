@@ -5,14 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int i = 1;
-        int max = 0;
-        // Please write your code here.
-        for (; i < n+1 || i < m+1; i++ ) {
-            if (n % i == 0 && m % i == 0) {
-                max = i;
-            }
+
+        int temp;
+        while (m != 0) {
+            temp = m % n;
+            n = m;
+            m = temp;
         }
-        System.out.println(max);
+        System.out.println(n);
     }
 }
