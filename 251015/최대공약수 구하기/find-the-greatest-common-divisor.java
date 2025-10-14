@@ -5,10 +5,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-
+        
         int temp;
         while (m != 0) {
-            temp = m % n;
+            temp = n % m;
             n = m;
             m = temp;
         }
