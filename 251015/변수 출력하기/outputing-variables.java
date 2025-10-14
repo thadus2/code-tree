@@ -3,6 +3,6 @@ public class Main {
         // Please write your code here.
         int a = 3;
         String b = "C";
-        System.out.print(a + "..." + b)
+        System.out.print(a + "..." + b);
     }
 }
