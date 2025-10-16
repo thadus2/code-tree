@@ -11,9 +11,9 @@ public class Main {
                 }
             }
             if (flag)
-                return flag;
+                return true;
         }
-        return flag;
+        return false;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
