@@ -1,11 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
+    private static int power(int a, int b) {
+        int answer = 1;
+        for (int i = 1; i < b + 1; i++) {
+            answer *= a;
+        }
+        return answer;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
         // Please write your code here.
-        System.out.println((int)Math.pow(a,b));
+        System.out.println(power(a, b));
     }
 }
