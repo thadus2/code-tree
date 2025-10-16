@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     private static String isPart(int a[], int b[], int n1, int n2) {
         int cnt = 0;
-        for (int i = 0; i < n1; i++) {
+        for (int i = 0; i < n1 - n2 + 1; i++) {
             for (int j = 0; j < n2; j++) {
                 if (a[i + j] != b[j]) {
                     cnt = 0;
