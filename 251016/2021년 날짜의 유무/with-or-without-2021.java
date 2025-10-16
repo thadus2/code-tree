@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Main {
     private static boolean isExist(int m, int d) {
+        if (m < 1 || m > 12)
+            return false;
         if (m == 2)
             if (d > 0 && d < 29)
                 return true;
