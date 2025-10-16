@@ -1,19 +1,19 @@
 import java.util.Scanner;
 public class Main {
-    private static String isPart(int a[], int b[], int n1, int n2) {
-        int cnt = 0;
+    private static boolean isPart(int a[], int b[], int n1, int n2) {
+        boolean flag = true;
         for (int i = 0; i < n1 - n2 + 1; i++) {
+            flag = true;
             for (int j = 0; j < n2; j++) {
                 if (a[i + j] != b[j]) {
-                    cnt = 0;
+                    flag = false;
                     break;
                 }
-                cnt += 1;
             }
-            if (cnt == n2)
-                return "Yes";
+            if (flag)
+                return flag;
         }
-        return "No";
+        return flag;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,6 +26,9 @@ public class Main {
         for (int i = 0; i < n2; i++)
             b[i] = sc.nextInt();
         // Please write your code here.
-        System.out.println(isPart(a, b, n1, n2));
+        if (isPart(a, b, n1, n2))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
     }
 }
