@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     private static int power(int a, int b) {
         int answer = 1;
-        for (int i = 1; i < b + 1; i++) {
+        for (int i = 0; i < b; i++) {
             answer *= a;
         }
         return answer;
