@@ -6,19 +6,19 @@ public class Main {
                 return true;
             else
                 return false;
-        if (m % 2 == 0){
+        if (m % 2 == 0) {
             if (m < 8 && d > 0 && d < 31)
                 return true;
             else if (m >= 8 && d > 0 && d <= 31)
                 return true;
+        }
         else {
             if (m < 8 && d > 0 && d <= 31)
                 return true;
             else if (m >= 8 && d > 0 && d < 31)
                 return true;
         }
-    }
-    return false;
+        return false;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
