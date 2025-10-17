@@ -5,9 +5,8 @@ public class Main {
             if (isExist(m, d))
                 System.out.println("Winter");
         }
-        else if (m == 2) {
-            if ((d == 29 && isLeap(y)) || (d != 29 && isExist(m, d)))
-                System.out.println("Winter");                
+        else if ((m == 2) && ((d == 29 && isLeap(y)) || (d != 29 && isExist(m, d)))) {
+            System.out.println("Winter");                
         }
         else if ((m == 3 || m == 4 || m == 5) && isExist(m, d))
             System.out.println("Spring");
