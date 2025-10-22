@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     private static int isPartIndex(String s, String p) {
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i <= s.length() - p.length(); i++) {
             boolean flag = true;
             if (s.charAt(i) != p.charAt(0)) 
                 flag = false;
