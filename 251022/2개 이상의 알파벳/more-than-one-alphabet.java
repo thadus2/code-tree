@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Main {
     private static boolean func(String s) {
         boolean flag = false;
-        for (int i = 0; i < s.length() - 1; i++) {
-            for (int j = 0; j < s.length() - 1; j++) {
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j < s.length(); j++) {
                 if (s.charAt(i) != s.charAt(j)) {
                     flag = true;
                     break;
