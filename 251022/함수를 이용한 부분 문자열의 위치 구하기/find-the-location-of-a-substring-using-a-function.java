@@ -7,9 +7,10 @@ public class Main {
                 flag = false;
             else {                
                 for (int j = 1; j < p.length(); j++) {
-                    if (s.charAt(i + j) != p.charAt(j))
+                    if (s.charAt(i + j) != p.charAt(j)) {
                         flag = false;
                         break;
+                    }
                 }
             }
             if (flag) 
