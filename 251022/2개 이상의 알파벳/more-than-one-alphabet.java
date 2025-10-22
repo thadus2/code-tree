@@ -2,16 +2,14 @@ import java.util.Scanner;
 public class Main {
     private static boolean func(String s) {
         boolean flag = false;
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = 0; j < s.length(); j++) {
-                if (s.charAt(i) != s.charAt(j)) {
-                    flag = true;
-                    break;
-                }
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(0) != s.charAt(i)) {
+                flag = true;    
+                break;
             }
-            if (flag)
-                return true;
         }
+        if (flag)
+            return true;
         return false;
     }
     public static void main(String[] args) {
