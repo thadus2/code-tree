@@ -3,10 +3,11 @@ public class Main {
     private static int findMax(int[] arr,int n) {
         if (n == arr.length - 1)
             return arr[n];
-        if (arr[n] > findMax(arr, n + 1))    
+        int prev = findMax(arr, n + 1);
+        if (arr[n] > prev)    
             return arr[n];
         else
-            return findMax(arr, n + 1);
+            return prev;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
