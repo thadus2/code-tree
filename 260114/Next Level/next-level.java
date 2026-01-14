@@ -20,7 +20,7 @@ public class Main {
         int level = sc.nextInt();
         User user1 = new User();
         System.out.println("user " + user1.id + " lv " + user1.level);
-        User user2 = new User("hello", 28);
+        User user2 = new User(id, level);
         System.out.println("user " + user2.id + " lv " + user2.level);
         // Please write your code here.
     }
