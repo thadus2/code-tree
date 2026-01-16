@@ -27,7 +27,7 @@ public class Main {
         }
         Arrays.sort(names);
         for (int i = 0; i < n; i ++) {
-            if (names[names.length - 1] == persons[i].name) {
+            if (names[names.length - 1].equals(persons[i].name)) {
                 System.out.println("name " + persons[i].name);
                 System.out.println("addr " + persons[i].addr);
                 System.out.println("city " + persons[i].city);
