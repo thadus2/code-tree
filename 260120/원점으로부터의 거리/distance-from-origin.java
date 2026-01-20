@@ -24,7 +24,7 @@ public class Main {
         int point1, point2;
         for (int i = 0; i < n; i++) {
             point1 = sc.nextInt();
-            points2 = sc.nextInt();
+            point2 = sc.nextInt();
             dots[i] = new Dot((Math.abs(point1) + Math.abs(point2)), (i + 1));
         }
         // Please write your code here.
