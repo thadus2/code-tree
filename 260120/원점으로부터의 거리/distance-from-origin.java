@@ -21,11 +21,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         Dot[] dots = new Dot[n];
-        int[][] points = new int[n][2];
+        int point1, point2;
         for (int i = 0; i < n; i++) {
-            points[i][0] = sc.nextInt();
-            points[i][1] = sc.nextInt();
-            dots[i] = new Dot((Math.abs(points[i][0]) + Math.abs(points[i][1])), (i + 1));
+            point1 = sc.nextInt();
+            points2 = sc.nextInt();
+            dots[i] = new Dot((Math.abs(point1) + Math.abs(point2)), (i + 1));
         }
         // Please write your code here.
         Arrays.sort(dots);
