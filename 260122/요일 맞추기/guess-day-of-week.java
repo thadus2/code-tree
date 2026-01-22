@@ -20,7 +20,7 @@ public class Main {
                 break;
             total_day++;
             d1++;
-            if (d1 > num_of_days[m1 + 1]){
+            if (d1 > num_of_days[m1 - 1]){
                 d1 = 1;
                 m1++;
             }
