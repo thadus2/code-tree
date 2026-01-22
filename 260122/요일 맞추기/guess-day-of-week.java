@@ -16,14 +16,14 @@ public class Main {
         }
         int total_day = 0;
         while (true) {
+            if (d1 == d2 && m1 == m2)
+                break;
             total_day++;
             d1++;
             if (d1 > num_of_days[m1 + 1]){
                 d1 = 1;
                 m1++;
             }
-            if (d1 == d2 && m1 == m2)
-                break;
         }
         String[] days = new String[]{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
         String[] days_rev = new String[] {"Mon", "Sun", "Sat", "Fri", "Thu", "Wed", "Tue"};
