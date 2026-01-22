@@ -5,26 +5,14 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
         int C = sc.nextInt();
-        int d, h, m;
-        d = 11;
-        h = 11;
-        m = 11;
         // Please write your code here.
-        if (C < 11) {
-            B--;
-            C += 60;
-        }
-        C -= m;
-        if (B < 11) {
-            A--;
-            B += 24;
-        }
-        B -= h;
-        if (A < 11) {
+        int start_time = (A * 24 * 60) + (B * 60) + C;
+        int end_time = (11 * 24 * 60) + (11 * 60) + 11;
+        int diff = start_time - end_time;
+        if (diff < 0) {
             System.out.println(-1);
             return;
         }
-        A -= d;
-        System.out.println((A * 24 * 60) + (B * 60) + C);
+        System.out.println(diff);
     }
 }
