@@ -14,7 +14,7 @@ public class Main {
         }
         // Please write your code here.
         int max = 0;
-        for (int i = 0; i < K; i++) {
+        for (int i = 0; i < N; i++) {
             if (block[i] > max)
                 max = block[i];
         }
