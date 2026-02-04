@@ -12,9 +12,14 @@ public class Main {
             if (i > 0) {
                 if (arr[i] == arr[i - 1]) {
                     curr++;
-                }
-                else if (max <= curr) {
+                    if (max <= curr) {
                         max = curr;
+                    }
+                }
+                else { 
+                    if (max <= curr) {
+                        max = curr;
+                    }
                     curr = 1;
                 }
             }
