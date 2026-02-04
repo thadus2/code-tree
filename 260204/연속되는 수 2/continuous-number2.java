@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int curr = 1;
-        int max = 0;
+        int max = 1;
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -13,8 +13,7 @@ public class Main {
                 if (arr[i] == arr[i - 1]) {
                     curr++;
                 }
-                else {
-                    if (max < curr)
+                else if (max <= curr) {
                         max = curr;
                     curr = 1;
                 }
