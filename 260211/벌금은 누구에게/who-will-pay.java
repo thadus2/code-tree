@@ -11,13 +11,11 @@ public class Main {
         for (int i = 0; i < m; i++) {
             penalizedPerson = sc.nextInt();
             penalizedPersons[penalizedPerson]++;
-        }
-        // Please write your code here.
-        for (int i = 1; i < n + 1; i++) {
             if (penalizedPersons[i] >= k) {
                 System.out.println(i);
                 break;
             }
         }
+        // Please write your code here.
     }
 }
