@@ -8,11 +8,11 @@ public class Main {
         int k = sc.nextInt();
         int[] penalizedPersons = new int[n + 1];
         int penalizedPerson;
-        int firstPenalize = 0;
+        int firstPenalize = -1;
         for (int i = 0; i < m; i++) {
             penalizedPerson = sc.nextInt();
             penalizedPersons[penalizedPerson]++;
-            if (penalizedPersons[penalizedPerson] >= k && firstPenalize == 0) {
+            if (penalizedPersons[penalizedPerson] >= k && firstPenalize == -1) {
                 firstPenalize = penalizedPerson;
             }
         }
