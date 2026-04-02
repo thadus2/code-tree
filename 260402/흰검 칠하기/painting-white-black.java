@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class Main {
-    private static final int OFFSET = 10;
-    private static final int MAX_SIZE = 25;
+    private static final int OFFSET = 100000;
+    private static final int MAX_SIZE = 200050;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int tile[][] = new int[MAX_SIZE][2];
+        int tile[][] = new int[MAX_SIZE][3];
         int curr = OFFSET;
         int target;
         for (int i = 0; i < N; i++) {
@@ -25,7 +25,7 @@ public class Main {
                 target = curr + x - 1;
                 for (int j = curr; j <= target; j++) {
                     tile[j][0] = 2;
-                    tile[j][1]++;
+                    tile[j][2]++;
                 }
                 curr = target;
             }
@@ -35,7 +35,7 @@ public class Main {
         int black = 0;
         int gray = 0;
         for (int i = 0; i < MAX_SIZE; i++) {
-            if (tile[i][1] >= 4) {
+            if (tile[i][1] >= 2 && tile[i][2] >= 2) {
                 gray++;
                 continue;
             }
