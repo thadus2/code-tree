@@ -9,7 +9,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         // Please write your code here.
-        int count = 1, max = 0;
+        int count = 1, max = 1;
         for (int i = 1; i < n; i++) {
             if (arr[i] == arr[i - 1])  
                 count++;
