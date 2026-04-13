@@ -7,7 +7,7 @@ public class Main {
         moves[0] = sc.nextInt();
         moves[1] = sc.nextInt();
         // Please write your code here.
-        int[][] load = new int[100000][2];
+        int[][] load = new int[1000010][2];
         int[] pos = new int[]{1, 1};
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < moves[i]; j++) {
