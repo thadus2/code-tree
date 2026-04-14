@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    private static final int OFFSET = 250000;
+    private static final int OFFSET = 1000000;
     private static final int MAX_SIZE = 2 * OFFSET + 10;
     // private static final int 
     public static void main(String[] args) {
