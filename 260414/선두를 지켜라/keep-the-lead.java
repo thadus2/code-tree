@@ -34,7 +34,7 @@ public class Main {
             if(head == 0)
                 if (A[i] > B[i])
                     head = 1;
-                else
+                else if(A[i] < B[i])
                     head = 2;
             if(head == 1 && A[i] < B[i]) {
                 head = 2;
@@ -48,3 +48,7 @@ public class Main {
         System.out.println(count);
     }
 }
+
+// 1 2 4 6 8 10
+
+// 1 2 3 10 15 20
