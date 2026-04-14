@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    private static final int OFFSET = 1000000;
-    private static final int MAX_SIZE = 2 * OFFSET + 10;
+    private static final int MAX_SIZE = 2000010;
     private static final int fillPosition(Scanner sc, int n, int[] arr) {
-        int pos = OFFSET;
+        int pos = 1;
         for (int i = 0; i < n; i++) {
             int t = sc.nextInt();
             char d = sc.next().charAt(0);
