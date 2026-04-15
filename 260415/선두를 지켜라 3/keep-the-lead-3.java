@@ -44,8 +44,7 @@ public class Main {
                 head = 1;
                 count++;
             }
-            else if (head == 0 && A[i] == B[i]) {
-                head = 0;
+            else if (A[i] == B[i]) {
                 count++;
             }
         }
