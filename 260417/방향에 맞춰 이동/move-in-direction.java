@@ -11,15 +11,7 @@ public class Main {
             char dir = sc.next().charAt(0);
             int dist = sc.nextInt();
             // Please write your code here.
-            int direction = 0;
-            if (dir == 'N')
-                direction = 0;
-            if (dir == 'E')
-                direction = 1;
-            if (dir == 'S')
-                direction = 2;
-            if (dir == 'W')
-                direction = 3;
+            int direction = "NESW".indexOf(dir);
             while (dist-- > 0) {
                 x += dx[direction];
                 y += dy[direction];
