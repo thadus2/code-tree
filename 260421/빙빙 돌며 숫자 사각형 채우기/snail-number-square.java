@@ -16,19 +16,14 @@ public class Main {
         for (int i = 0; i < n * m; i++) {
             int nx = x + dx[dir];
             int ny = y + dy[dir];
-            if (inRange(nx, ny, n, m) && square[nx][ny] == 0) {
-                square[x][y] = i + 1;
-                x = nx;
-                y = ny;
-            }
-            else {
+            if (!(inRange(nx, ny, n, m) && square[nx][ny] == 0)) {
                 dir = (dir + 1) % 4;
                 nx = x + dx[dir];
                 ny = y + dy[dir];
-                square[x][y] = i + 1;
-                x = nx;
-                y = ny;
-            }
+            }   
+            square[x][y] = i + 1;
+            x = nx;
+            y = ny;
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
