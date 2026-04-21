@@ -14,7 +14,7 @@ public class Main {
         // Please write your code here.
         int[][] grid = new int[N][N];
         grid[R][C] = 1;
-        int[] dx = new int[]{0, 1, 0, -1};
+        int[] dx = new int[]{0, -1, 0, 1};
         int[] dy = new int[]{1, 0, -1, 0};
 
         int dir = "RULD".indexOf(D);
