@@ -14,7 +14,7 @@ public class Main {
         grid[x][y] = 1;
         for(int i = 0; i < n; i++){
             char dir = sc.next().charAt(0);
-            char d = "NESW".indexOf(dir);
+            int d = "NESW".indexOf(dir);
             int dist = sc.nextInt();
             while(dist-- > 0) {
                 time++;
@@ -22,7 +22,7 @@ public class Main {
                 y += dy[d];
                 if (grid[x][y] == 1) {
                     System.out.println(time);
-                    return
+                    return;
                 }
             }
         }
