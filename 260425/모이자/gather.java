@@ -8,7 +8,7 @@ public class Main {
             a[i] = sc.nextInt();
         }
         // Please write your code here.
-        int min_move = 9999;
+        int min_move = 100000000;
         for (int i = 0; i < n; i++) {
             int sum = 0;
             for (int j = 0; j < n; j++) {
