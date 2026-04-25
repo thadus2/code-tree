@@ -12,9 +12,8 @@ public class Main {
         for (int i = 0; i < n; i++) {
             int sum = 0;
             for (int j = 0; j < n; j++) {
-                sum += a[j] * (Math.pow((i - j), 2) / 2);
+                sum += a[j] * Math.abs(i - j);
             }
-            System.out.println(sum);
             if (sum < min_move)
                 min_move = sum;
         }
