@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] x = new int[n];
+        int[] y = new int[n];
+        for (int i = 0; i < n; i++) {
+            x[i] = sc.nextInt();
+            y[i] = sc.nextInt();
+        }
+        // Please write your code here.
+        int min_dist = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            double curr_dist = 0;
+            for (int j = 0; j < n; j++) {
+                if (i == j) continue;
+                curr_dist = Math.pow((x[i] - x[j]), 2) + Math.pow((y[i] - y[j]), 2);
+                if (min_dist > curr_dist)
+                    min_dist = (int)curr_dist;
+            }
+        }
+        System.out.println(min_dist);
+    }
+}
